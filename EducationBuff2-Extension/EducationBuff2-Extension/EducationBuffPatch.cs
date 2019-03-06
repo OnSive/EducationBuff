@@ -24,7 +24,7 @@ namespace EducationBuff2_Extension
             else
             {
                 // Begin replacement
-                emp.CoursePoints = emp.employee.GetEducationFactor(role) * (months / 8f);
+                emp.CoursePoints = emp.employee.GetEducationFactor(role) * (months / 6f);
                 Debug.Log("EducationBuff: Harmony confirmed operational");
                 // End replacement
                 emp.CourseRole = role;
