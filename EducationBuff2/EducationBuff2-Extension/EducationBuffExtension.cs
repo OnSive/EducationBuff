@@ -10,6 +10,7 @@ namespace EducationBuff2_Extension
     class EducationBuffExtension
     {
         static HarmonyInstance harmony;
+        public static float MonthsToMaxOut { get; set; } = 6;
 
         public static void Start()
         {
@@ -23,6 +24,11 @@ namespace EducationBuff2_Extension
             harmony.UnpatchAll();
             harmony = null;
             Debug.Log("EducationBuff: Goodbye Harmony... for now");
+        }
+
+        public static void Update(float value)
+        {
+            MonthsToMaxOut = value;
         }
     }
 }

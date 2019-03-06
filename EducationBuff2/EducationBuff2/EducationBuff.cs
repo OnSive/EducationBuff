@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace EducationBuff2
@@ -18,13 +19,27 @@ namespace EducationBuff2
             Text label = WindowManager.SpawnLabel();
             label.text = "Created by Designer225 using Harmony Patch Library by Andreas Pardeike.\n" +
                          "Buffs skill gains from education to make them seem less useless. Useful\n" +
-                         "for mods that add a lot of specialization fields.\n\n" +
-                         "Due to technical issues with code mod uploads, I will not give permission\n" +
-                         "to upload the mod to Steam Workshop. You may not edit my mod without\n" +
-                         "permission, either; but you can contribute at GitHub.";
+                         "for mods that add a lot of specialization fields.\n\n";
 
-            WindowManager.AddElementToElement(label.gameObject, parent.gameObject, new Rect(0, 0, 400, 128),
+            WindowManager.AddElementToElement(label.gameObject, parent.gameObject, new Rect(0, 0, label.preferredWidth, label.preferredHeight),
                 new Rect(0, 0, 0, 0));
+
+            Text text = WindowManager.SpawnLabel();
+            text.text = "Enter the desired number of months required to max out a skill (up to 4 characters including dots):";
+            WindowManager.AddElementToElement(text.gameObject, parent.gameObject, new Rect(0, label.preferredHeight, text.preferredWidth, text.preferredHeight), new Rect(0, 0, 0, 0));
+
+            InputField input = WindowManager.SpawnInputbox();
+            input.lineType = InputField.LineType.SingleLine;
+            input.characterValidation = InputField.CharacterValidation.Decimal;
+            input.characterLimit = 4;
+            input.text = EducationBuffBehavior.MonthsToMaxOut.ToString();
+            input.onEndEdit.AddListener(newValue =>
+            {
+                if (!float.TryParse(newValue, out float result))
+                    return;
+                EducationBuffBehavior.MonthsToMaxOut = result;
+            });
+            WindowManager.AddElementToElement(input.gameObject, parent.gameObject, new Rect(0, text.preferredHeight + label.preferredHeight, 100, 28), new Rect(0, 0, 0, 0));
         }
     }
 }
