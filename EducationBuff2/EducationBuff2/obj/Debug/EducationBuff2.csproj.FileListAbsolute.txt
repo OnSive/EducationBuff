@@ -1,0 +1,17 @@
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\bin\Debug\EducationBuff2.dll
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\bin\Debug\EducationBuff2.pdb
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\bin\Debug\Assembly-CSharp.dll
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\bin\Debug\UnityEngine.dll
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\bin\Debug\UnityEngine.UI.dll
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\bin\Debug\mcs.dll
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\bin\Debug\DOTween.dll
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\bin\Debug\SSAA.dll
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\bin\Debug\Mono.Cecil.dll
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\bin\Debug\DOTween46.dll
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\bin\Debug\Assembly-CSharp.xml
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\obj\Debug\EducationBuff2.csprojAssemblyReference.cache
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\obj\Debug\EducationBuff2.csproj.CoreCompileInputs.cache
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\obj\Debug\EducationBuff2.csproj.CopyComplete
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\obj\Debug\EducationBuff2.dll
+C:\Users\desig\source\repos\EducationBuff2\EducationBuff2\obj\Debug\EducationBuff2.pdb

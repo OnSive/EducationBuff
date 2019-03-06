@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>Assembly-CSharp</name>
+	</assembly>
+	<members>
+		<member name="M:WindowManager.FindElementPath(System.String,UnityEngine.Transform)">
+			<summary>
+            Find the element using a path, e.g. Window/Button
+            You can find paths using the in-game command UI_UNDER_MOUSE
+            </summary>
+			<param name="path">The path</param>
+			<param name="startFrom">Where to start looking, default is main UI Canvas</param>
+			<returns></returns>
+		</member>
+		<member name="M:WindowManager.AddElementToWindow(UnityEngine.GameObject,GUIWindow,UnityEngine.Rect,UnityEngine.Rect)">
+			<summary>
+            Add a UI element to a window
+            </summary>
+			<param name="position">The position and size</param>
+			<param name="anchors">How to anchor the position and size, relative to the window</param>
+		</member>
+		<member name="M:WindowManager.AddElementToElement(UnityEngine.GameObject,UnityEngine.GameObject,UnityEngine.Rect,UnityEngine.Rect)">
+			<summary>
+            Add a UI element to a UI element
+            </summary>
+			<param name="parent">The parent UI element</param>
+			<param name="position">The position and size</param>
+			<param name="anchors">How to anchor the position and size, relative to the parent UI element</param>
+		</member>
+		<member name="M:WindowManager.IsActiveWindow(GUIWindow)">
+			<summary>
+            Is window the current top most window
+            </summary>
+		</member>
+		<member name="M:WindowManager.FindWindowType``1">
+			<summary>
+            Find all open non-modal windows with a certain component attached
+            </summary>
+			<typeparam name="T">The component type to look for</typeparam>
+		</member>
+		<member name="M:WindowManager.FindWindowTypeEnum``1">
+			<summary>
+            Find all open non-modal windows with a certain component attached
+            </summary>
+			<typeparam name="T">The component type to look for</typeparam>
+		</member>
+		<member name="M:WindowManager.AnyWindowsOfType``1">
+			<summary>
+            Find all open windows with a certain component attached, including modal windows
+            </summary>
+			<typeparam name="T">The component type to look for</typeparam>
+		</member>
+		<member name="M:WindowManager.RegisterWindow(GUIWindow)">
+			<summary>
+            Should only be called by the window itself
+            Will fail if the window manager of this scene isn't ready yet
+            </summary>
+			<param name="window">The window to register</param>
+		</member>
+		<member name="M:WindowManager.Focus(GUIWindow)">
+			<summary>
+            Make a window the top-most winodw
+            </summary>
+		</member>
+		<member name="M:WindowManager.CloseAll(GUIWindow)">
+			<summary>
+            Close all open non-modal windows, except the exempt window
+            </summary>
+		</member>
+		<member name="M:WindowManager.DeregisterWindow(GUIWindow)">
+			<summary>
+            Should only be called by the window itself
+            </summary>
+		</member>
+		<member name="M:WindowManager.ShowMessageBox(System.String,System.Boolean,DialogWindow.DialogType,System.Action,System.String,System.Action)">
+			<summary>
+            Ask the player a yes/no question. If the questionID is supplied, the game will ask whether to ask again and save response.
+            </summary>
+			<returns>The window generated, futher action not required</returns>
+			<param name="extraNoAction">Optionally carry out an extra action if player clicks no</param>
+		</member>
+		<member name="M:WindowManager.SpawnFader(UnityEngine.RectTransform,UnityEngine.RectTransform)">
+			<summary>
+            Spawn a rectangle that fades from start to end rect.
+            Used by windows to signify a related button, see GUIWindow.SpawnFrom
+            </summary>
+		</member>
+		<member name="T:SVector3">
+			<summary>
+            Class to enable binary serialization of Unity's default Vector2, Vector3, Color and Quaternion structs
+            Has methods for direct string serialization as well
+            Has implicit converters to help readability
+            </summary>
+		</member>
+		<member name="M:Utilities.PerDay(System.Single,System.Single,System.Boolean)">
+			<summary>
+            Is actually per month
+            </summary>
+		</member>
+		<member name="M:Utilities.PerDay(System.Single,System.Boolean)">
+			<summary>
+            Is actually per month
+            </summary>
+		</member>
+		<member name="M:Utilities.isLeft(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)">
+			<summary>
+            Whether point is left of line
+            </summary>
+			<param name="p3">point</param>
+		</member>
+		<member name="M:Utilities.GetLineIntersectionClamped(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Single)">
+			<summary>
+            First line, p - p2, has coordinates clamped
+            </summary>
+		</member>
+		<member name="M:Utilities.ConvertToBool(System.String,System.String)">
+			<summary>
+            Convert string to bool and return variable name in exception if it fails
+            </summary>
+		</member>
+		<member name="M:Utilities.ConvertToInt(System.String,System.String)">
+			<summary>
+            Convert string to integer and return variable name in exception if it fails
+            </summary>
+		</member>
+		<member name="M:Utilities.ConvertToFloat(System.String,System.String)">
+			<summary>
+            Convert string to float and return variable name in exception if it fails
+            </summary>
+		</member>
+		<member name="M:Utilities.ConvertToBoolDef(System.String,System.Boolean)">
+			<summary>
+            Convert string to bool and return default value if it fails
+            </summary>
+		</member>
+		<member name="M:Utilities.ConvertToIntDef(System.String,System.Int32)">
+			<summary>
+            Convert string to integer and return default value if it fails
+            </summary>
+		</member>
+		<member name="M:Utilities.ConvertToFloatDef(System.String,System.Single)">
+			<summary>
+            Convert string to float and return default value if it fails
+            </summary>
+		</member>
+		<member name="M:MarketSimulation.FixSales(System.Int32,SoftwareProduct,System.Single,System.Single,System.Int32,System.Single)">
+			<summary>
+            Turn sales data into actual countable sales numbers 
+            </summary>
+			<returns>physical sales, digital sales, total refunds</returns>
+		</member>
+		<member name="M:SDateTime.ToTimeString(System.Boolean)">
+			<summary>
+            20:33 AM/PM
+            </summary>
+			<param name="minutes"></param>
+			<returns></returns>
+		</member>
+		<member name="M:SDateTime.ToCompactString">
+			<summary>
+            November 2016
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:SDateTime.ToExtraCompactString">
+			<summary>
+            NOV16
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:SDateTime.ToCompactString2">
+			<summary>
+            Day 1/4 November 2016
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:SDateTime.ToVeryCompactString">
+			<summary>
+            Nov 2016
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:SDateTime.ToQuarterString">
+			<summary>
+            Q4 2016
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:SDateTime.ToString">
+			<summary>
+            20:33 Day 1/4 November 2016
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:WorkItem.CompanyWork(System.Single)">
+			<summary>
+            Do company work
+            </summary>
+			<param name="delta">Delta scaled to in-game minutes</param>
+			<returns>Cost to subsidiary for work done</returns>
+		</member>
+		<member name="F:GUIWindow.OnlyHide">
+			<summary>
+            Whether to destroy window when closed or not
+            </summary>
+		</member>
+		<member name="F:GUIWindow.StartHidden">
+			<summary>
+            Whether the window should immediatly hide when created
+            </summary>
+		</member>
+		<member name="F:GUIWindow.Modal">
+			<summary>
+            Whether the window should disable everything else in the UI when open
+            </summary>
+		</member>
+		<member name="F:GUIWindow.AlwaysOnTop">
+			<summary>
+            Whether the window should be on top, even if not modal or active
+            </summary>
+		</member>
+		<member name="F:GUIWindow.HasBeenShown">
+			<summary>
+            Whether the window has ever been shown
+            </summary>
+		</member>
+		<member name="F:GUIWindow.HideBlockPanel">
+			<summary>
+            Whether the dark overlay should be hidden when modal window is open
+            </summary>
+		</member>
+		<member name="F:GUIWindow.ContinuallyUpdateSize">
+			<summary>
+            Whether to call OnSizeChanged once at end or continually when player scales window
+            </summary>
+		</member>
+		<member name="F:GUIWindow.InitialTitle">
+			<summary>
+            Unless the window Title has been changed when the window is created, it will take this name localized
+            </summary>
+		</member>
+		<member name="F:GUIWindow.OnClose">
+			<summary>
+            Callback for when window is closed, even if only hidden
+            </summary>
+		</member>
+		<member name="F:GUIWindow.SizeButton">
+			<summary>
+            If size button is destroyed, window will no longer be sizable
+            </summary>
+		</member>
+		<member name="F:GUIWindow.HelpButton">
+			<summary>
+            Tutorial button, will be enabled if AssociatedTutorial is set
+            </summary>
+		</member>
+		<member name="F:GUIWindow.SpawnFrom">
+			<summary>
+            UI element to visually "zoom" into when closed
+            </summary>
+		</member>
+		<member name="F:GUIWindow.WindowSizeID">
+			<summary>
+            Unique ID to save the window's position and size
+            </summary>
+		</member>
+		<member name="F:GUIWindow.OnSizeChanged">
+			<summary>
+            Callback for when player scales window, see ContinuallyUpdateSize
+            </summary>
+		</member>
+		<member name="P:GUIWindow.Shown">
+			<summary>
+            Whether window is currently open
+            </summary>
+		</member>
+		<member name="P:GUIWindow.Title">
+			<summary>
+            Window title, setting this will localize value automatically
+            </summary>
+		</member>
+		<member name="P:GUIWindow.NonLocTitle">
+			<summary>
+            Window title, will not be localized when set
+            </summary>
+		</member>
+		<member name="M:GUIWindow.Focus">
+			<summary>
+            Same as WindowManager.Focus(this)
+            </summary>
+		</member>
+	</members>
+</doc>
