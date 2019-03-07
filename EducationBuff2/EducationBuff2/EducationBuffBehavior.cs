@@ -25,6 +25,7 @@ namespace EducationBuff2
 
         public override void OnActivate()
         {
+            // Have to isolate the actual Harmony code from this DLL because of code mod limitations
             harmony = Assembly.LoadFile("./DLLMods/0Harmony.dll");
             extension = Assembly.LoadFile("./DLLMods/EducationBuff2-Extension.dll");
             extension.GetType("EducationBuff2_Extension.EducationBuffExtension").GetMethod("Start").Invoke(null, null);

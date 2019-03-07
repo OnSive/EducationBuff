@@ -1,9 +1,9 @@
 # EducationBuff
-This is a demonstration mod to show the possibilities of modding Software Inc. with the Harmony Patch Library. Specifically, this mod makes education twice as effective.
+This is a demonstration mod to show the possibilities of modding Software Inc. with the Harmony Patch Library. Specifically, this mod allows you to adjust how long you need to send your employee to school to max out a skill of your choosing.
 
 ## Requirements
-1. Harmony Patch Library (included)
-2. Software Inc. Alpha 10
+1. Harmony Patch Library v1.2.0.1 (included)
+2. Software Inc. Alpha 10 (tested on A10.10)
 
 ## How to install
 1. Download the latest release of this mod. Extract the contents of the mod to the DLLMods folder inside your Software Inc. directory.
@@ -13,4 +13,4 @@ This is a demonstration mod to show the possibilities of modding Software Inc. w
 5. Enjoy!
 
 ## Credits
-Andreas Pardeike - Harmony Patch Library. Without it this would not have been possible.
+Andreas Pardeike - Harmony Patch Library. Without it this would likely not have been possible.
