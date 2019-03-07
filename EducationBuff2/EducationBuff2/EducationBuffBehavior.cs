@@ -15,7 +15,7 @@ namespace EducationBuff2
         {
             get
             {
-                return _instance.LoadSetting<float>("MonthsToMaxOut", 6);
+                return _instance != null ? _instance.LoadSetting<float>("MonthsToMaxOut", 6) : 6;
             }
             set
             {
@@ -36,7 +36,7 @@ namespace EducationBuff2
             extension.GetType("EducationBuff2_Extension.EducationBuffExtension").GetMethod("Stop").Invoke(null, null);
         }
 
-        private void Start()
+        private void Awake()
         {
             _instance = this;
         }
