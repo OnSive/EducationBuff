@@ -1,5 +1,5 @@
 # EducationBuff
-This is a demonstration mod to show the possibilities of modding Software Inc. with the Harmony Patch Library. Specifically, this mod allows you to adjust how long you need to send your employee to school to max out a skill of your choosing.
+This is a demonstration mod to show the possibilities of modding Software Inc. with the Harmony Patch Library. Specifically, this mod allows you to adjust how long you need to send your employee to school to (mostly) max out a skill of your choosing.
 
 ## Requirements
 1. Harmony Patch Library v1.2.0.1 (included)
