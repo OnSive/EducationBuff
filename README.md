@@ -13,4 +13,4 @@ This is a demonstration mod to show the possibilities of modding Software Inc. w
 5. Enjoy!
 
 ## Credits
-Andreas Pardeike - Harmony Patch Library. Without it this would likely not have been possible.
+Andreas Pardeike - Harmony Patch Library (https://github.com/pardeike/Harmony). Without it this would likely not have been possible.
